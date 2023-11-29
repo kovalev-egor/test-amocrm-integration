@@ -14,5 +14,5 @@ function getClient(): AmoCRMApiClient
         $_ENV['CLIENT_ID'],
         $_ENV['CLIENT_SECRET'],
         $_ENV['REDIRECT_URL']
-    ))->setAccountBaseDomain('egorkovalev.amocrm.ru');
+    ))->setAccountBaseDomain($_ENV['ACCOUNT_BASE_DOMAIN']);
 }
